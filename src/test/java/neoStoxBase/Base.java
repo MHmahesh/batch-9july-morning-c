@@ -15,8 +15,10 @@ public class Base {
 		
         System.setProperty("webdriver.chrome.driver", "C:\\Users\\Mahesh\\Desktop\\new\\seleniumFile\\ChromeDriver.exe");
 		
+        
         driver=new ChromeDriver();
 		
+        
 		driver.get(neoStoxPOMclasses.NeoUtility.readDataFromPropertyFile("devurl"));
 		
 		
