@@ -35,7 +35,7 @@ public class NeoStoxUsernameValidating extends Base{
   public void signIntoBrowser() throws IOException, InterruptedException {
 	  login.loginpage(driver, neoStoxPOMclasses.NeoUtility.readDataFromPropertyFile("devUserId"));
 	  login.signinclick(driver);
-	  Thread.sleep(2000);
+	  Thread.sleep(1000);
 	  pass.enterPassword(driver, neoStoxPOMclasses.NeoUtility.readDataFromPropertyFile("devPassword"));
 	  pass.submitclick(driver);
 	  home.popupHandling(driver);
